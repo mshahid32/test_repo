@@ -1,8 +1,8 @@
 import React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import constants from '../../constants';
-import ProfileScreen from '../../screens/profile/ProfileScreen';
-import ApplicationDetailScreen from '../../screens/dashboard/ApplicationDetailScreen';
+import constants from '../../../constants';
+import ApplicationDetailScreen from '../ApplicationDetailScreen';
+import ProfileScreen from '../../profile/ProfileScreen';
 const Tab = createMaterialTopTabNavigator();
 export default function SwipePage() {
   return (

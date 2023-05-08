@@ -1,8 +1,7 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
-import constants from '../../constants';
-import globalStyles from '../../assets/styles/GlobalStyles';
-import { useOrientation } from "../../hooks/common/useOrientation";
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {useOrientation} from '../../../hooks/common/useOrientation';
+import globalStyles from '../../../assets/styles/GlobalStyles';
 
 interface SaleCardProps {
   icon: React.ReactElement<SVGSVGElement>;

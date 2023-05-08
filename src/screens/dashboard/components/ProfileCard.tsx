@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
-import constants from '../../constants';
-import globalStyles from '../../assets/styles/GlobalStyles';
+import globalStyles from '../../../assets/styles/GlobalStyles';
+import constants from '../../../constants';
 
 interface SaleCardProps {
   handlePress?: () => void;

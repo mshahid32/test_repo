@@ -1,10 +1,10 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
 import globalStyles from '../../assets/styles/GlobalStyles';
-import DashboardHeader from '../../components/dashboard/DashboardHeader';
+import DashboardHeader from '../dashboard/components/DashboardHeader';
 import constants from '../../constants';
-import ProfileCard from '../../components/dashboard/ProfileCard';
-import SwipePage from '../../components/dashboard/SwipePage';
+import ProfileCard from '../dashboard/components/ProfileCard';
+import SwipePage from '../dashboard/components/SwipePage';
 
 const DashboardScreen = () => {
   const handleMenuPress = () => {};

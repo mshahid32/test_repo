@@ -1,12 +1,13 @@
 import React from 'react';
 import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
-import ApplicationDetailCard from '../../components/dashboard/ApplicationDetailCard';
 import constants from '../../constants';
 import globalStyles from '../../assets/styles/GlobalStyles';
-import FamilyDetailCard from "./components/FamilyDetailCard";
-import RequestAmountCard from "./components/RequestAmountCard";
-
+import FamilyDetailCard from './components/FamilyDetailCard';
+import RequestAmountCard from './components/RequestAmountCard';
+import ApplicationDetailCard from './components/ApplicationDetailCard';
 const ApplicationDetailScreen = () => {
+  const handleFamilyDetailNavigation = () => {};
+  const handleRequestAmountNavigation = () => {};
   return (
     <SafeAreaView style={styles.mainContainer}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -46,8 +47,8 @@ const ApplicationDetailScreen = () => {
             />
           </View>
         </View>
-        <FamilyDetailCard />
-        <RequestAmountCard />
+        <FamilyDetailCard handleNavigation={handleFamilyDetailNavigation} />
+        <RequestAmountCard handleNavigation={handleRequestAmountNavigation} />
       </ScrollView>
     </SafeAreaView>
   );
