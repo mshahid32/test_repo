@@ -1,48 +1,41 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import constants from '../../constants';
 import globalStyles from '../../assets/styles/GlobalStyles';
 
 interface DashboardHeaderProps {
-  onPress?: () => void;
+  handleMenu?: () => void;
 }
 
 const DashboardHeader: React.FC<DashboardHeaderProps> = props => {
   return (
     <View style={styles.headerContainer}>
       <View>
-        <Text style={globalStyles.h6}>Good Morning</Text>
-        <Text style={globalStyles.h2}>Ghazi</Text>
-        <View style={styles.location}>
-          <constants.svg.marker width={20} height={20} />
-          <Text style={{paddingLeft: 10}}>Tlogomas, Malang</Text>
-        </View>
+        <Text style={[globalStyles.h3, styles.titleText]}>GROWTECH</Text>
+        <Text style={[globalStyles.h6]}>Application verifications</Text>
       </View>
-      <TouchableOpacity onPress={props.onPress}>
-        <Image
-          source={require('../../assets/images/Avatar.png')}
-          style={styles.profileImage}
-        />
-      </TouchableOpacity>
+      <View style={styles.actionContainer}>
+        <TouchableOpacity>
+          <constants.svg.logo width={24} height={24} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={props.handleMenu}>
+          <constants.svg.logo width={24} height={24} />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
 const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
-    margin: 30,
+    margin: 20,
     justifyContent: 'space-between',
-    alignItems: 'center',
   },
-  location: {
+  actionContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
   },
-  profileImage: {
-    width: 60,
-    height: 60,
-    borderRadius: 10,
-  },
+  titleText: {
+    color: constants.colors.primary,
+  }
 });
 export default DashboardHeader;

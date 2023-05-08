@@ -1,5 +1,6 @@
 export type RootStackParams = {
   BottomNavigation: undefined;
+  DashboardScreen: undefined;
 };
 export type ProfileStackParams = {
   ProfileScreen: undefined;

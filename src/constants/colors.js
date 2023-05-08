@@ -2,7 +2,7 @@ const color = {
   magicMint: '#ABEDD8',
   green: '#58A92B',
   darkGreen: '#29A17C',
-  primary: '#FF844C',
+  primary: '#188764',
   secondary: '#188764',
   text: '#3FBD96',
   white: '#FFFFFF',
