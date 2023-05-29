@@ -14,7 +14,7 @@ const ProfileCard: React.FC<SaleCardProps> = props => {
       onPress={props.handlePress}>
       <View style={styles.itemContainer}>
         <Image
-          source={require('../../assets/images/Avatar.png')}
+          source={require('../../../assets/images/Avatar.png')}
           style={styles.image}
         />
         <View>
